@@ -46,6 +46,11 @@ var createScene = function(_engine: BABYLON.Engine, canvas: HTMLCanvasElement) {
   const htmlMeshDiv = new HtmlMesh(scene, "div");
 
   const div = document.createElement('div');
+  div.innerHTML = `
+      <h1>Yo yo yo!!!</h1>
+      <p>This is a sample HTML mesh.</p>
+      <button>Click me</button>
+`
   div.style.backgroundColor = "purple";
   div.style.width = '100%';
   div.style.height = '100%';
@@ -74,10 +79,10 @@ var createScene = function(_engine: BABYLON.Engine, canvas: HTMLCanvasElement) {
 
   // Our built-in 'ground' shape.
   var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
-  var groundMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
-  groundMaterial.diffuseColor = new BABYLON.Color3(0.5, 0.8, 0.5); // RGB for a greenish color
-  ground.material = groundMaterial;
-  groundMaterial.bumpTexture = new BABYLON.Texture("./normal.jpg", scene);
+  // var groundMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
+  // groundMaterial.diffuseColor = new BABYLON.Color3(0.5, 0.8, 0.5); // RGB for a greenish color
+  // ground.material = groundMaterial;
+  // groundMaterial.bumpTexture = new BABYLON.Texture("./normal.jpg", scene);
   //groundMaterial.bumpTexture.level = 0.125;
 
   return scene;
