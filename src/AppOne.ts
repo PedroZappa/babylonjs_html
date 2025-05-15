@@ -65,7 +65,7 @@ var createScene = function (engine: BABYLON.Engine, canvas: HTMLCanvasElement) {
     groundMaterial.diffuseColor = new BABYLON.Color3(0.5, 0.8, 0.5); // RGB for a greenish color
     ground.material = groundMaterial;
     groundMaterial.bumpTexture = new BABYLON.Texture("./normal.jpg", scene);
-    //groundMaterial.bumpTexture.level = 0.125;    
+    //groundMaterial.bumpTexture.level = 0.125;
 
 
     var redMaterial = new BABYLON.StandardMaterial("redMaterial", scene);
