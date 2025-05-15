@@ -11,6 +11,8 @@
     "src/@types"
   ],
   "devDependencies": {
+    "@babylonjs/addons": "^8.8.0",
+    "@babylonjs/core": "^8.8.0",
     "typescript": "^5.3.3",
     "vite": "^6.3.5"
   },
