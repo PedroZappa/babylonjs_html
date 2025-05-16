@@ -78,7 +78,7 @@ var createScene = function(_engine: BABYLON.Engine, canvas: HTMLCanvasElement) {
   light.intensity = 0.7;
 
   // Our built-in 'ground' shape.
-  var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
+  var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 10, height: 10 }, scene);
   // var groundMaterial = new BABYLON.StandardMaterial("groundMaterial", scene);
   // groundMaterial.diffuseColor = new BABYLON.Color3(0.5, 0.8, 0.5); // RGB for a greenish color
   // ground.material = groundMaterial;
